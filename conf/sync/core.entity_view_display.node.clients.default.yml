@@ -1,0 +1,48 @@
+uuid: 5c2f5731-1af6-4054-bebe-0f9b9f342149
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.clients.body
+    - field.field.node.clients.field_logo
+    - field.field.node.clients.field_website
+    - node.type.clients
+  module:
+    - image
+    - text
+    - user
+id: node.clients.default
+targetEntityType: node
+bundle: clients
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_logo:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_website:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

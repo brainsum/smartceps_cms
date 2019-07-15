@@ -1,0 +1,18 @@
+uuid: 1d675edf-1094-4a45-89d4-fe70751bbec9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_get_in_touch
+field_name: field_get_in_touch
+entity_type: node
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

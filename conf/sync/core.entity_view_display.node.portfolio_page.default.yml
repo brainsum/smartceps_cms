@@ -1,0 +1,30 @@
+uuid: 6fd05098-3877-4f36-a5e0-6c97b14b9a7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.portfolio_page.field_background_image
+    - node.type.portfolio_page
+  module:
+    - image
+    - user
+id: node.portfolio_page.default
+targetEntityType: node
+bundle: portfolio_page
+mode: default
+content:
+  field_background_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

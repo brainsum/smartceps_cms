@@ -1,0 +1,29 @@
+uuid: 600d77d8-a8b8-4085-8f44-245668956d29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_top_benefits
+    - node.type.article
+    - taxonomy.vocabulary.top_benefits
+id: node.article.field_top_benefits
+field_name: field_top_benefits
+entity_type: node
+bundle: article
+label: 'Top Benefits'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      top_benefits: top_benefits
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

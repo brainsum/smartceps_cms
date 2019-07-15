@@ -1,0 +1,103 @@
+uuid: 0660a0b7-504f-43b4-8c03-03a925353294
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.portfolios.field_background_image
+    - field.field.node.portfolios.field_portfolio_category
+    - field.field.node.portfolios.field_project_info
+    - field.field.node.portfolios.field_project_items
+    - image.style.thumbnail
+    - node.type.portfolios
+  module:
+    - field_collection
+    - image
+    - imce
+    - path
+    - text
+id: node.portfolios.default
+targetEntityType: node
+bundle: portfolios
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_background_image:
+    weight: 1
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  field_portfolio_category:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_project_info:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_project_items:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+  path:
+    type: path
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

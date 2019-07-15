@@ -1,0 +1,17 @@
+uuid: 520ba489-d089-4ee5-a7f0-42246882a765
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Slider
+type: slider
+description: 'Frontpage slider elemnts'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

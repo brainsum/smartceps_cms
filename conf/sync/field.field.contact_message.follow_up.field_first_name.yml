@@ -1,0 +1,19 @@
+uuid: e1ee4699-ac87-4df9-8e85-080532ad48b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.follow_up
+    - field.storage.contact_message.field_first_name
+id: contact_message.follow_up.field_first_name
+field_name: field_first_name
+entity_type: contact_message
+bundle: follow_up
+label: 'First name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

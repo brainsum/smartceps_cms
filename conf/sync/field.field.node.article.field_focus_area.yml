@@ -1,0 +1,29 @@
+uuid: b151453e-955a-4cf5-b615-5eb593da7df5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_focus_area
+    - node.type.article
+    - taxonomy.vocabulary.focus_area
+id: node.article.field_focus_area
+field_name: field_focus_area
+entity_type: node
+bundle: article
+label: 'Focus Area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      focus_area: focus_area
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

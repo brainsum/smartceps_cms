@@ -1,0 +1,22 @@
+uuid: 5583ddcb-4e46-444b-a005-e15603c6fabe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.portfolio_page
+id: node.portfolio_page.promote
+field_name: promote
+entity_type: node
+bundle: portfolio_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,119 @@
+uuid: 9b9be877-2ab5-409b-ac60-7115755d2bbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.field.contact_message.feedback.field_company
+    - field.field.contact_message.feedback.field_phone
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_1:
+      children:
+        - name
+        - mail
+      parent_name: ''
+      weight: 0
+      label: 'Group 1'
+      format_type: html_element
+      format_settings:
+        label: 'Group 1'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-field col-sm-6 col-md-4'
+      region: content
+    group_2:
+      children:
+        - field_phone
+        - field_company
+      parent_name: ''
+      weight: 1
+      label: 'Group 2'
+      format_type: html_element
+      format_settings:
+        label: 'Group 2'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-field col-sm-6 col-md-4'
+      region: content
+    group_3:
+      children:
+        - message
+      parent_name: ''
+      weight: 2
+      label: 'Group 3'
+      format_type: html_element
+      format_settings:
+        label: 'Group 3'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-field col-sm-12 col-md-4'
+      region: content
+id: contact_message.feedback.default
+targetEntityType: contact_message
+bundle: feedback
+mode: default
+content:
+  copy:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_company:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: Company
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: Phone
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  mail:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  message:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 4
+      placeholder: Message
+    third_party_settings: {  }
+    region: content
+  name:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  preview:
+    weight: 40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  subject: true

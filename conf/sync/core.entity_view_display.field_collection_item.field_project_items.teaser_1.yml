@@ -1,0 +1,29 @@
+uuid: ea074e38-5dd2-4bc6-87b0-16b30275e920
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.field_collection_item.teaser_1
+    - field.field.field_collection_item.field_project_items.field_portfolio_description
+    - field.field.field_collection_item.field_project_items.field_portfolio_image
+    - field.field.field_collection_item.field_project_items.field_portfolio_title
+    - field_collection.field_collection.field_project_items
+  module:
+    - image_raw_formatter
+id: field_collection_item.field_project_items.teaser_1
+targetEntityType: field_collection_item
+bundle: field_project_items
+mode: teaser_1
+content:
+  field_portfolio_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image_raw_formatter
+    region: content
+hidden:
+  field_portfolio_description: true
+  field_portfolio_title: true

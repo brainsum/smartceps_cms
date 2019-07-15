@@ -1,0 +1,15 @@
+uuid: fa1ed673-5cbe-4b5d-98e6-ddcc88a6d78b
+langcode: en
+status: true
+dependencies: {  }
+name: image_760x514
+label: 'image 760x514'
+effects:
+  26c6f50b-07da-41b6-b8f4-e180506396a9:
+    uuid: 26c6f50b-07da-41b6-b8f4-e180506396a9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 760
+      height: 514
+      anchor: center-center

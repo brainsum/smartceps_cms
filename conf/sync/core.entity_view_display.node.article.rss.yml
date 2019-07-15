@@ -1,0 +1,46 @@
+uuid: bad9373f-e197-43ae-8f31-fe6649e2e49d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.article.field_category
+    - field.field.node.article.field_focus_area
+    - field.field.node.article.field_get_in_touch
+    - field.field.node.article.field_implemented_in
+    - field.field.node.article.field_keywords
+    - field.field.node.article.field_project_participants
+    - field.field.node.article.field_provider
+    - field.field.node.article.field_readtime
+    - field.field.node.article.field_services
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_top_benefits
+    - field.field.node.article.field_website_url
+    - node.type.article
+  module:
+    - user
+_core:
+  default_config_hash: Q90X1FmFdOkTx8udckWPoAgleOstOerbgDnNpoP6PO4
+id: node.article.rss
+targetEntityType: node
+bundle: article
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_category: true
+  field_focus_area: true
+  field_get_in_touch: true
+  field_implemented_in: true
+  field_keywords: true
+  field_project_participants: true
+  field_provider: true
+  field_readtime: true
+  field_services: true
+  field_tags: true
+  field_top_benefits: true
+  field_website_url: true

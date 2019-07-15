@@ -1,0 +1,22 @@
+uuid: 3fab1282-c29c-4acd-a24a-7f27d8f89e9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.slider
+  module:
+    - text
+id: node.slider.body
+field_name: body
+entity_type: node
+bundle: slider
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

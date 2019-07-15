@@ -1,0 +1,27 @@
+uuid: f3984c4c-861a-48c3-8b98-8066c9b3a11e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content
+label: Content
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  22fccbcd-1935-4174-b858-bec1c138cb4f:
+    id: node_type
+    bundles:
+      article: article
+      blog_post: blog_post
+      clients: clients
+      page: page
+      portfolio_page: portfolio_page
+      portfolios: portfolios
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 22fccbcd-1935-4174-b858-bec1c138cb4f
+selection_logic: and
+weight: -5
+relationships: {  }

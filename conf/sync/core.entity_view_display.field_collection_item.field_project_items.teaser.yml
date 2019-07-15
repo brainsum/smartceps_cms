@@ -1,0 +1,30 @@
+uuid: 61857322-0ca6-4822-84d1-e4ebc420b31c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.field_collection_item.teaser
+    - field.field.field_collection_item.field_project_items.field_portfolio_description
+    - field.field.field_collection_item.field_project_items.field_portfolio_image
+    - field.field.field_collection_item.field_project_items.field_portfolio_title
+    - field_collection.field_collection.field_project_items
+    - image.style.image_480x880
+  module:
+    - image
+id: field_collection_item.field_project_items.teaser
+targetEntityType: field_collection_item
+bundle: field_project_items
+mode: teaser
+content:
+  field_portfolio_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: image_480x880
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_portfolio_description: true
+  field_portfolio_title: true

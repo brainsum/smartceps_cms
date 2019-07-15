@@ -1,0 +1,43 @@
+uuid: 08156bc7-48aa-496e-a9cc-aae7d66cdf8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.blog_categories.field_background_image
+    - image.style.thumbnail
+    - taxonomy.vocabulary.blog_categories
+  module:
+    - image
+    - imce
+    - path
+id: taxonomy_term.blog_categories.default
+targetEntityType: taxonomy_term
+bundle: blog_categories
+mode: default
+content:
+  field_background_image:
+    weight: 1
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  description: true

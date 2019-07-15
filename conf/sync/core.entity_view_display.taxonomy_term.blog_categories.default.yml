@@ -1,0 +1,15 @@
+uuid: dcf3c092-c928-4f51-9d99-e44ff5ed526d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.blog_categories.field_background_image
+    - taxonomy.vocabulary.blog_categories
+id: taxonomy_term.blog_categories.default
+targetEntityType: taxonomy_term
+bundle: blog_categories
+mode: default
+content: {  }
+hidden:
+  description: true
+  field_background_image: true

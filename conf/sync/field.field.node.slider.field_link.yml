@@ -1,0 +1,34 @@
+uuid: b95b3fa1-a21d-473d-9eee-9425340dc8de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.blog_post
+    - node.type.page
+    - node.type.portfolio_page
+    - node.type.portfolios
+    - node.type.slider
+id: node.slider.field_link
+field_name: field_link
+entity_type: node
+bundle: slider
+label: 'Internal link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+      blog_post: blog_post
+      portfolio_page: portfolio_page
+      portfolios: portfolios
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: page
+field_type: entity_reference

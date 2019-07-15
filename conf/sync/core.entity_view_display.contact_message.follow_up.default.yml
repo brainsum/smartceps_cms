@@ -1,0 +1,86 @@
+uuid: f30c16b1-3502-45e3-b154-7d487530d8fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.follow_up
+    - field.field.contact_message.follow_up.field_company2
+    - field.field.contact_message.follow_up.field_email
+    - field.field.contact_message.follow_up.field_first_name
+    - field.field.contact_message.follow_up.field_lastname
+    - field.field.contact_message.follow_up.field_message
+id: contact_message.follow_up.default
+targetEntityType: contact_message
+bundle: follow_up
+mode: default
+content:
+  field_company2:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_email:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_first_name:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_lastname:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_message:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  mail:
+    weight: -2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  name:
+    weight: -3
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  subject:
+    weight: -1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden: {  }

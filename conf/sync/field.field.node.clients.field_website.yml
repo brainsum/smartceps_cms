@@ -1,0 +1,21 @@
+uuid: 0e3f60eb-7102-4202-8d0e-e5e64e320543
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website
+    - node.type.clients
+id: node.clients.field_website
+field_name: field_website
+entity_type: node
+bundle: clients
+label: Website
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'http://domain.com'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 199a7c50-49bc-4166-915c-3ac0fb395dce
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_term
+label: 'Taxonomy term'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary]/[term:name]'
+selection_criteria:
+  200ef62c-d66f-49ae-ac35-97a0cd17d28d:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      blog_categories: blog_categories
+      portfolio_categories: portfolio_categories
+      tags: tags
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 200ef62c-d66f-49ae-ac35-97a0cd17d28d
+selection_logic: and
+weight: -5
+relationships: {  }

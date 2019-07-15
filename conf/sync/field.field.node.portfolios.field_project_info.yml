@@ -1,0 +1,29 @@
+uuid: d2b6b24e-6edb-4785-8b58-6185e3b57e11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_info
+    - node.type.portfolios
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+    php_code: '0'
+id: node.portfolios.field_project_info
+field_name: field_project_info
+entity_type: node
+bundle: portfolios
+label: 'Project info'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

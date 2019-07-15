@@ -1,0 +1,8 @@
+uuid: dcadcab8-9aff-42ed-8c3a-435b57ad2b3e
+langcode: en
+status: true
+dependencies: {  }
+id: mobile-menu
+label: 'Mobile menu'
+description: ''
+locked: false

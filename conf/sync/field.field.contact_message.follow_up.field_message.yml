@@ -1,0 +1,19 @@
+uuid: 17770c4c-711f-4189-a8ef-fa5ba518d843
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.follow_up
+    - field.storage.contact_message.field_message
+id: contact_message.follow_up.field_message
+field_name: field_message
+entity_type: contact_message
+bundle: follow_up
+label: Message
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

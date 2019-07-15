@@ -1,0 +1,19 @@
+uuid: 36bee753-de0b-45e9-824a-f5be1e9a4134
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_get_in_touch
+    - node.type.article
+id: node.article.field_get_in_touch
+field_name: field_get_in_touch
+entity_type: node
+bundle: article
+label: 'Get in touch'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

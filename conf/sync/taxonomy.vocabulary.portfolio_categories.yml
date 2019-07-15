@@ -1,0 +1,9 @@
+uuid: 3fa22c3b-c232-42d5-892e-f28750a833de
+langcode: en
+status: true
+dependencies: {  }
+name: 'Portfolio categories'
+vid: portfolio_categories
+description: ''
+hierarchy: 0
+weight: 0

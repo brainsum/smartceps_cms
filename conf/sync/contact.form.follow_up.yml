@@ -1,0 +1,22 @@
+uuid: 827ea5c4-0621-449f-8499-f882ada5b650
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Send message'
+    show_preview: true
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
+id: follow_up
+label: 'Follow Up'
+recipients:
+  - smartceps@abud.hu
+  - tiburi@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: /node

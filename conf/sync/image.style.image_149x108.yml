@@ -1,0 +1,15 @@
+uuid: b8aa3dc7-322d-49bd-a5da-0f9c26c85a32
+langcode: en
+status: true
+dependencies: {  }
+name: image_149x108
+label: 'image 149x108'
+effects:
+  f6698ae0-0c21-4db2-bd43-a646cea2e4f4:
+    uuid: f6698ae0-0c21-4db2-bd43-a646cea2e4f4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 149
+      height: 108
+      anchor: center-center

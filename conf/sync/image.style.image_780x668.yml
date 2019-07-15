@@ -1,0 +1,15 @@
+uuid: d05a3c0e-62b3-4e42-bf31-d84de92573b2
+langcode: en
+status: true
+dependencies: {  }
+name: image_780x668
+label: 'image 780x668'
+effects:
+  25cff4fc-e3e5-4c97-9e6f-9b6c1f72950c:
+    uuid: 25cff4fc-e3e5-4c97-9e6f-9b6c1f72950c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 780
+      height: 668
+      anchor: center-center

@@ -1,0 +1,15 @@
+uuid: e650f4ee-f9ff-4a37-b4bc-c37514a5e244
+langcode: en
+status: true
+dependencies: {  }
+name: image_171x35
+label: 'image 171x35'
+effects:
+  e9ae94f9-38ea-4f99-a709-4d34d162916e:
+    uuid: e9ae94f9-38ea-4f99-a709-4d34d162916e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 171
+      height: 35
+      anchor: center-center

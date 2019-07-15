@@ -1,0 +1,19 @@
+uuid: 783b358f-9c69-4587-a149-8666eb4fec79
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.follow_up
+    - field.storage.contact_message.field_lastname
+id: contact_message.follow_up.field_lastname
+field_name: field_lastname
+entity_type: contact_message
+bundle: follow_up
+label: 'Last name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

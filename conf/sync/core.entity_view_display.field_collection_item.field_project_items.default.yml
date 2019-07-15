@@ -1,0 +1,55 @@
+uuid: c17991c1-e0f1-4413-93bf-fee63da8ac18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_project_items.field_portfolio_description
+    - field.field.field_collection_item.field_project_items.field_portfolio_image
+    - field.field.field_collection_item.field_project_items.field_portfolio_title
+    - field.field.field_collection_item.field_project_items.field_website
+    - field_collection.field_collection.field_project_items
+  module:
+    - image
+    - link
+id: field_collection_item.field_project_items.default
+targetEntityType: field_collection_item
+bundle: field_project_items
+mode: default
+content:
+  field_portfolio_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_portfolio_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_portfolio_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_website:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

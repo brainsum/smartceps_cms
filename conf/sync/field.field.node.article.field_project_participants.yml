@@ -1,0 +1,19 @@
+uuid: 64f88c8e-3194-4daa-b85d-141eeac5ad84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_participants
+    - node.type.article
+id: node.article.field_project_participants
+field_name: field_project_participants
+entity_type: node
+bundle: article
+label: 'Project Participants'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

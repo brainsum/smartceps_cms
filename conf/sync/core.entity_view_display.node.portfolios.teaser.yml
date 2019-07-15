@@ -1,0 +1,28 @@
+uuid: 4092147f-1452-475e-acbd-ddfaaedad7e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.portfolios.field_background_image
+    - field.field.node.portfolios.field_portfolio_category
+    - field.field.node.portfolios.field_project_info
+    - field.field.node.portfolios.field_project_items
+    - node.type.portfolios
+  module:
+    - user
+id: node.portfolios.teaser
+targetEntityType: node
+bundle: portfolios
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_background_image: true
+  field_portfolio_category: true
+  field_project_info: true
+  field_project_items: true

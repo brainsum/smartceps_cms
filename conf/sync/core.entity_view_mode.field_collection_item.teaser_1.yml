@@ -1,0 +1,10 @@
+uuid: 04f2a821-acec-491f-8525-f6fb04bb00ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+id: field_collection_item.teaser_1
+label: 'Teaser 1'
+targetEntityType: field_collection_item
+cache: true
