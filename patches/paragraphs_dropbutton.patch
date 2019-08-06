@@ -1,0 +1,33 @@
+diff --git a/claro.theme b/claro.theme
+index 1b1f0e4..67d7a97 100644
+--- a/claro.theme
++++ b/claro.theme
+@@ -11,6 +11,7 @@ use Drupal\Core\Form\FormStateInterface;
+ use Drupal\Core\GeneratedLink;
+ use Drupal\Core\Link;
+ use Drupal\Core\Render\Element;
++use Drupal\Core\Render\Markup;
+ use Drupal\Core\Template\Attribute;
+ use Drupal\Core\Url;
+ use Drupal\media\MediaForm;
+@@ -843,3 +844,19 @@ function claro_preprocess_views_ui_display_tab_bucket(&$variables) {
+     $variables['actions']['#dropbutton_type'] = 'extrasmall';
+   }
+ }
++
++/**
++ * Implements hook_preprocess_HOOK() for dropbutton_wrapper.
++ */
++function claro_preprocess_dropbutton_wrapper(&$variables) {
++  $children = (string)$variables['children'];
++
++  $ulpattern = '/(<ul.*class\s*= *["\']?)([^"\']*)(.*)(<li)/i';
++  $lipattern = '/(<li\sclass\s*= *["\']?)([^"\']*)(.*)(>)/i';
++
++  $children = preg_replace($lipattern, '$1$2 dropbutton__item $3$4', $children);
++  $children = preg_replace('/<li>/', '<li class="dropbutton__item">', $children);
++  $children = preg_replace($ulpattern, '$1$2 dropbutton--multiple $3$4', $children);
++
++  $variables['children'] = Markup::create($children);
++}
+\ No newline at end of file

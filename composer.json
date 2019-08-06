@@ -110,6 +110,9 @@
         "patches": {
             "drupal/admin_toolbar" : {
                 "Error because devel module has removed the execute php feature": "https://www.drupal.org/files/issues/2019-01-31/admin-toolbar-devel-route-error-3009193-38.patch"
+            },
+            "drupal/claro" : {
+                "Fixing Paragraphs dropbutton" : "./patches/paragraphs_dropbutton.patch"
             }
         }
     }
