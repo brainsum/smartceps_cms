@@ -1,5 +1,5 @@
 diff --git a/claro.theme b/claro.theme
-index 1b1f0e4..67d7a97 100644
+index 1b1f0e4..0458146 100644
 --- a/claro.theme
 +++ b/claro.theme
 @@ -11,6 +11,7 @@ use Drupal\Core\Form\FormStateInterface;
@@ -16,18 +16,17 @@ index 1b1f0e4..67d7a97 100644
  }
 +
 +/**
-+ * Implements hook_preprocess_HOOK() for dropbutton_wrapper.
++ * Implements hook_preprocess_HOOK() for links__dropbutton.
 + */
 +function claro_preprocess_dropbutton_wrapper(&$variables) {
 +  $children = (string)$variables['children'];
 +
-+  $ulpattern = '/(<ul.*class\s*= *["\']?)([^"\']*)(.*)(<li)/i';
-+  $lipattern = '/(<li\sclass\s*= *["\']?)([^"\']*)(.*)(>)/i';
++  $pattern = '/(<ul\sclass\s*= *["\']?)([^"\']*)(.*)(<li)/i';
++  $lipattern = '/(<li class\s*= *["\']?)([^"\']*)/i';
 +
-+  $children = preg_replace($lipattern, '$1$2 dropbutton__item $3$4', $children);
++  $children = preg_replace($lipattern, '$1$2 dropbutton__item', $children);
 +  $children = preg_replace('/<li>/', '<li class="dropbutton__item">', $children);
-+  $children = preg_replace($ulpattern, '$1$2 dropbutton--multiple $3$4', $children);
++  $children = preg_replace($pattern, '$1$2 dropbutton--multiple $3$4', $children);
 +
 +  $variables['children'] = Markup::create($children);
 +}
-\ No newline at end of file
